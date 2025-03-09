@@ -17,3 +17,38 @@ filterwarnings = [
 [tool.yapf]
 based_on_style = "pep8"
 blank_line_before_nested_class_or_def = false
+
+[tool.pdm]
+distribution = true
+
+[project]
+name = "taichi"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "whitingyan", email = "1712428442@qq.com"},
+]
+dependencies = [
+    "cmake",
+    "colorama",
+    "coverage",
+    "Pillow",
+    "pybind11",
+    "GitPython",
+    "yapf",
+    "distro",
+    "isort",
+    "pylint",
+    "requests",
+    "twine",
+    "wheel",
+    "astunparse",
+    "pre-commit",
+    "scikit-build",
+    "numpy",
+    "ninja; platform_system != \"Windows\"",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
